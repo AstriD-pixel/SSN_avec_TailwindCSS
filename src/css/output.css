@@ -233,6 +233,12 @@
   .mt-auto {
     margin-top: auto;
   }
+  .-mr-2 {
+    margin-right: calc(var(--spacing) * -2);
+  }
+  .-mr-5 {
+    margin-right: calc(var(--spacing) * -5);
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -822,6 +828,26 @@
       margin-top: 50px;
     }
   }
+  .md\:-mr-2 {
+    @media (width >= 48rem) {
+      margin-right: calc(var(--spacing) * -2);
+    }
+  }
+  .md\:-mr-5 {
+    @media (width >= 48rem) {
+      margin-right: calc(var(--spacing) * -5);
+    }
+  }
+  .md\:mr-5 {
+    @media (width >= 48rem) {
+      margin-right: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:mr-10 {
+    @media (width >= 48rem) {
+      margin-right: calc(var(--spacing) * 10);
+    }
+  }
   .md\:mb-0 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -830,6 +856,31 @@
   .md\:-ml-0\.5 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * -0.5);
+    }
+  }
+  .md\:-ml-3 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * -3);
+    }
+  }
+  .md\:-ml-5 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * -5);
+    }
+  }
+  .md\:-ml-7 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * -7);
+    }
+  }
+  .md\:-ml-8 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * -8);
+    }
+  }
+  .md\:-ml-10 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * -10);
     }
   }
   .md\:ml-0 {
@@ -1049,6 +1100,41 @@
   .xl\:px-30 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 30);
+    }
+  }
+  .\32 xl\:-left-5 {
+    @media (width >= 96rem) {
+      left: calc(var(--spacing) * -5);
+    }
+  }
+  .\32 xl\:-left-9 {
+    @media (width >= 96rem) {
+      left: calc(var(--spacing) * -9);
+    }
+  }
+  .\32 xl\:-left-px {
+    @media (width >= 96rem) {
+      left: -1px;
+    }
+  }
+  .\32 xl\:-ml-5 {
+    @media (width >= 96rem) {
+      margin-left: calc(var(--spacing) * -5);
+    }
+  }
+  .\32 xl\:-ml-8 {
+    @media (width >= 96rem) {
+      margin-left: calc(var(--spacing) * -8);
+    }
+  }
+  .\32 xl\:w-full {
+    @media (width >= 96rem) {
+      width: 100%;
+    }
+  }
+  .\32 xl\:max-w-full {
+    @media (width >= 96rem) {
+      max-width: 100%;
     }
   }
 }
