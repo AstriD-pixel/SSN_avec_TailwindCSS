@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/css/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="w-full font-sans leading-relaxed">
+    <header class="bg-[#FFF5E0]">
+        <nav class="flex flex-col md:flex-row justify-between items-center px-8 xl:px-30 py-5 text-[#051848]"> <!--la nav bar-->
+            <a href="index.html" class="text-2xl md:text-[32px] font-bold mb-3 md:mb-0">SSN</a>
+            <ul class="flex flex-col md:flex-row gap-4 md:gap-6 text-[16px] text-center md:text-left pt-3">
+                <li><a href="github.html">Github</a></li>
+                <li><a href="login.html">Se connecter</a></li>
+                <li><a href="register.html" class="font-bold">S'inscrire</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex grow items-center justify-center py-20">
+        <div class="mx-auto px-6 md:px-8 xl:px-30 w-full max-w-7xl lg:max-w-full">
+
+            <div class="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
+
+                <div class="w-full max-w-md">
+                    <h1 class="font-bold mb-10 text-[32px] md:text-[40px] text-[#303030]">Inscription</h1>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="email" class="block mt-5 text-[16px] text-[#303030] font-normal">Adresse mail</label>
+                            <input type="email" id="email" name="email"  placeholder="ex:blabla@gmail.com" required
+                                class="w-full h-[55px] md:h-[60px] p-[15px] border border-[#FFD88B] bg-[#fffac8] rounded-[3px] mt-[5px] text-[1em]">
+                        </div>
+
+                        <div>
+                            <label for="password" class="block mt-5 text-[16px] text-[#303030] font-normal" >Mot de passe</label>
+                            <input type="password" id="password" name="password" required
+                                 class="w-full h-[55px] md:h-[60px] p-[15px] border border-[#FFD88B] rounded-[3px] bg-[#fffac8] mt-[5px] text-[1em]">
+                        </div>
+
+                        <button type="submit"
+                            class="bg-[#FFD452] w-[164px] h-[50px] md:h-[54px] px-5 py-2.5 mt-[30px] rounded-[3px] text-[1.1em] cursor-pointer border-none shadow-[2px_2px_#00000026] transition--colors duration-300 hover:bg-[#ffc938]">
+                            S'inscrire
+                        </button>
+                    </form>
+                </div>
+
+                <div class=" w-full lg:w-1/2 flex justify-center items-center">
+                    <div class="relative w-full h-full">
+                        <img src="src/images/undraw_sign_in_e6hj 1.png" 
+                            alt="Illustration connexion sécurisée" 
+                            class="w-full max-h-[70vh] object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full bg-[#FFF5E0] py-10 mt-auto">
+        <div class="max-w-7xl mx-auto lg:pl-10 px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-8"> 
+                <div class="flex flex-col items-center">
+                    <h4 class="font-bold text-lg mb-3 text-[#051848]">Mes réseaux</h4>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-[#051848] flex items-center"><img src="src/images/GitHub.svg" alt="lien github" class="mr-2">AlexandreGérault</a></li>
+                        <li><a href="#" class="text-[#051848] flex items-center"><img src="src/images/Twitter.svg" alt="lien twitter" class="mr-2">AlexandreGraul1</a></li>
+                        <li><a href="#" class="text-[#051848] flex items-center"><img src="src/images/Linkedin.svg" alt="lien linkedin" class="mr-2">AlexandreGérault</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h4 class="font-bold text-lg mb-3 text-[#051848]">Participer</h4>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-[#051848] flex items-center">Suggérer une nouvelle fonctionnalité</a></li>
+                        <li><a href="#" class="text-[#051848] flex items-center">Devenir collaborateur</a></li>
+                        <li><a href="#" class="text-[#051848] flex items-center">Forker le projet</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <h4 class="font-bold text-lg mb-3 text-[#051848]">Actions</h4>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="text-[#051848]">Créer un compte</a></li>
+                        <li><a href="#" class="text-[#051848]">Me contacter</a></li>
+                        <li><a href="#" class="text-[#051848]">Voir le TP sur Made</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
